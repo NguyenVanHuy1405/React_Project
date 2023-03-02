@@ -6,7 +6,7 @@
 }
 
 body {
-  background: var( --color-bg);
+  background: var(--color-bg);
 }
 
 a {
@@ -14,7 +14,7 @@ a {
   text-decoration: none;
 }
 
-.gradient_bg {
+.gradient__bg {
   background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
 
   /* safari 5.1+,chrome 10+ */
@@ -30,28 +30,27 @@ a {
   background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
 }
 
-.gradient_text {
-  background: var(--gradient_text);
+.gradient__text {
+  background: var(--gradient-text);
   background-clip: text;
-  -webkit-background-clop: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .section__padding {
-  padding: 4 rem 6 rem;
+  padding: 4rem 6rem;
 }
 
 .section__margin {
-  margin: 4 rem 6 rem;
+  margin: 4rem 6rem;
 }
 
 .scale-up-center {
 	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-
- @-webkit-keyframes scale-up-center {
+@-webkit-keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
@@ -61,6 +60,7 @@ a {
             transform: scale(1);
   }
 }
+
 @keyframes scale-up-center {
   0% {
     -webkit-transform: scale(0.5);
@@ -74,18 +74,20 @@ a {
 
 @media screen and (max-width: 700px) {
   .section__padding {
-    padding: 4 rem;
+    padding: 4rem;
   }
+
   .section__margin {
-    margin: 4 rem;
+    margin: 4rem;
   }
 }
 
 @media screen and (max-width: 550px) {
   .section__padding {
-    padding: 4 rem 2 rem;
+    padding: 4rem 2rem;
   }
+
   .section__margin {
-    margin: 4 rem 2 rem;
-  }
+    margin: 4rem 2rem;
+  }  
 }
